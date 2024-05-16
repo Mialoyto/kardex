@@ -246,22 +246,37 @@ BEGIN
         WHERE KAR.idproducto= _idproducto;
 END $$
 
-
+-- FALTAN IMPLEMENTAR DE AQUI A BAJO
+DROP DATABASE IF EXISTS spu_colaboradores_listar;
+DELIMITER $$
 CREATE PROCEDURE spu_colaboradores_listar()
 BEGIN
 	SELECT
+    PER.nombres,
     PER.apepaterno,
 	PER.apematerno,
-	PER.nombres,
+    ROL.rol,
 	PER.nrodocumento,
 	PER.telfprincipal,
-	PER.telfsecundario,
-    ROL.rol
-    FROM personas PER
-    INNER JOIN colaboradores COL ON COL.idrol = ROL.idrol
-    INNER JOIN roles ROL ON ROL.idrol = PER.idrol;
-		
-END;
+	PER.telfsecundario
+    FROM colaboradores COL
+    INNER JOIN personas PER ON PER.idpersona = COL.idpersona
+    INNER JOIN roles ROL ON ROL.idrol =  COL.idrol;
+END $$
+
+DROP DATABASE IF EXISTS spu_tiposproductos_listar;
+DELIMITER $$
+CREATE PROCEDURE spu_tiposproductos_listar()
+BEGIN
+	SELECT
+		MAR.marca,
+        TIP.tipoproducto,
+        PRO.descripcion,
+        PRO.modelo
+	FROM productos PRO
+		INNER JOIN marcas MAR ON MAR.idmarca = PRO.idmarca
+        INNER JOIN 	tipoProductos TIP ON TIP.idtipoproducto = PRO.idtipoproducto;
+END $$
 
 -- VISTAS
 

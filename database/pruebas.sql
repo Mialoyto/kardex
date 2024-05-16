@@ -1,6 +1,5 @@
 use dbkardex;
 
-
 -- Insertar marcas de tecnología
 INSERT INTO marcas (marca) VALUES
 ('Apple'),
@@ -38,47 +37,29 @@ INSERT INTO roles (rol) VALUES
 ('Coordinador de envíos'),
 ('Asistente de atención al cliente');
 
+-- INSERTAR PERSONAS
+CALL spu_personas_registrar ('Loyola','Torres','Juan','73217991','123456789','');
+CALL spu_personas_registrar ('Loyola','Torres','Jose','73217989','123456780','987654321');
 
-
-
-call spu_personas_registrar ('Loyola','Torres','Juan','73217991','123456789','');
-call spu_personas_registrar ('Loyola','Torres','Jose','73217989','123456780','987654321');
+-- INSERTAR COLABORADOR
 CALL spu_colaborador_registrar('1','1','miguel','administrador');
-
 
 -- contraseña encriptada = administrador
 UPDATE colaboradores 
 SET passusuario = "$2y$10$qE3VvkpqTFXvTBdhGJSFGO.9rXomoFtUA1uHoKOatzvRmOp6S3dqi" 
 WHERE idcolaborador = 1;
 
--- call spu_producto_reporte(3)
 
--- NOTA : VERIFICAR SI ES NECESARIO EL SPU DE ROL !!!
-/*DELIMITER $$
-CREATE PROCEDURE spu_rol_registrar (IN _rol VARCHAR(60))
-BEGIN
-	INSERT INTO roles 
-		(rol)	VALUES
-        (_rol);
-END $$*/
+-- CALL spu_kardex_movimiento (1, 2, 'SALIDA', 3);
+-- CALL spu_kardex_movimiento (1, 2, 'ENTRADA', 30);
 
-
-
-/*DELIMITER //
-CREATE FUNCTION retorna_dni ()
-RETURNS BOOL
-BEGIN
-    DECLARE nrodocumento INT;
-    SELECT COUNT(*) INTO total FROM personas;
-    RETURN total;
-END//
-DELIMITER ;*/
-
-
--- SET FOREIGN_KEY_CHECKS = 1;
-
--- CALL spu_kardex_movimiento (1, 2, 'SALIDA', 5);
--- CALL spu_kardex_movimiento (1, 2, 'ENTRADA', 15);
-
+-- SELECT * FROM kardex;
+-- CONSULTAS Y PRUBAS
+-- SELECT * FROM personas;
+-- SELECT * FROM roles;
+-- SELECT * FROM colaboradores;
+-- SELECT * FROM tipoProductos;
+-- SELECT * FROM marcas;
+-- SELECT * FROM productos;
 -- SELECT * FROM kardex;
 

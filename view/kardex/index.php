@@ -21,7 +21,7 @@
                 <!-- fila #01 -->
                 <div class="col g-2">
                     <!-- este es id de colb -->
-                    <!-- <a type="text" name="id" id="colaborador" value="<?= $_SESSION['login']['apepaterno'] ?>">id</a> -->
+                    <a type="text" name="id" id="idcolaborador" hidden value=""><?= $_SESSION['login']['idcolaborador'] ?></a>
                     <!-- <label for="id"></label> -->
                     <div class=" col-md px-5 pt-3">
                         <div class="form-floating">

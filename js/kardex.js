@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const idProd = document.querySelector("#resultadoprod");
     const movimiento = document.querySelector("#tipo-mov");
     const cantProd = document.querySelector("#cantidad");
+    const idcolab = document.querySelector("#idcolaborador");
     let datos = []
     function buscarProducto(producto) {
 
@@ -41,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
-    /* captura el id del select */
+    console.log("id del colABORADOR",idcolab.textContent)
+    /* captura el id del select pruba - borrar*/
     idProd.addEventListener('click', () => {
         console.log("soy el ID:", idProd.value)
 
@@ -53,12 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
 
         const params = new FormData();
-        params.append('operation', 'AddRegistroKardex'),
-            params.append('idcolaborador', ),
+            params.append('operation', 'AddRegistroKardex'),
+            params.append('idcolaborador', idcolab.textContent ),
             params.append('idproducto', idProd.value),
             params.append('tipomovimiento', movimiento.value),
             params.append('cantidad', cantProd.value)
-
 
         const options = {
             'method': 'POST',
@@ -66,9 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         fetch(`../../controllers/kardex.controller.php`, options)
-            .then(response => response.json())
+            .then(response => response.text())
             .then(data => {
-                console.log(data)
+                if(confirm("¿desea guardar datos")){
+                    formKardex.reset();
+                }
             })
             .catch(e => {
                 console.error(e)
@@ -76,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 
+    //  ver en consola borrar
     /* captura el id del select */
     idProd.addEventListener('click', () => {
         console.log("soy el ID:", idProd.value)
