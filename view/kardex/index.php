@@ -2,7 +2,7 @@
 
 <!-- CONTENIDO CABEZERA DEL DASHBOARD -->
 <div class="container-fluid px-4">
-    <h2 class="mt-4">Panel de reporte</h2>
+    <h2 class="mt-4">Panel de KARDEX</h2>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Registrar Movimientos del kardex</li>
     </ol>
@@ -21,8 +21,8 @@
                 <!-- fila #01 -->
                 <div class="col g-2">
                     <!-- este es id de colb -->
-                    <a type="text" name="id" id="colaborador" value="<?= $_SESSION['login']['apepaterno'] ?>">id</a>
-                    <label for="id"></label>
+                    <!-- <a type="text" name="id" id="colaborador" value="<?= $_SESSION['login']['apepaterno'] ?>">id</a> -->
+                    <!-- <label for="id"></label> -->
                     <div class=" col-md px-5 pt-3">
                         <div class="form-floating">
                             <input autofocus type="text" class="form-control" name="nombremodelo" id="nombremodelo"

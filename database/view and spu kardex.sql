@@ -220,12 +220,6 @@ END$$
 DELIMITER ;
 
 
-
-CALL spu_kardex_movimiento (1, 2, 'SALIDA', 5);
-CALL spu_kardex_movimiento (1, 2, 'ENTRADA', 15);
-
-SELECT * FROM kardex;
-
 DROP PROCEDURE IF EXISTS spu_producto_reporte;
 DELIMITER $$
 CREATE PROCEDURE spu_producto_reporte
@@ -253,10 +247,7 @@ BEGIN
 END $$
 
 
-CREATE PROCEDURE spu_colaboradores_listar
-(
-
-)
+CREATE PROCEDURE spu_colaboradores_listar()
 BEGIN
 	SELECT
     PER.apepaterno,

@@ -51,7 +51,7 @@ UPDATE colaboradores
 SET passusuario = "$2y$10$qE3VvkpqTFXvTBdhGJSFGO.9rXomoFtUA1uHoKOatzvRmOp6S3dqi" 
 WHERE idcolaborador = 1;
 
-call spu_producto_reporte(3)
+-- call spu_producto_reporte(3)
 
 -- NOTA : VERIFICAR SI ES NECESARIO EL SPU DE ROL !!!
 /*DELIMITER $$
@@ -76,14 +76,9 @@ DELIMITER ;*/
 
 
 -- SET FOREIGN_KEY_CHECKS = 1;
- delimiter $$
-create procedure retorna
-(
-	in _id_producto int,
-	out _valor_actual INT
-)
-begin
-set _valor_actual = stockactual
-end $$
 
+-- CALL spu_kardex_movimiento (1, 2, 'SALIDA', 5);
+-- CALL spu_kardex_movimiento (1, 2, 'ENTRADA', 15);
+
+-- SELECT * FROM kardex;
 
