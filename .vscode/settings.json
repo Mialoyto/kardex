@@ -1,0 +1,11 @@
+{
+    "[php]": {
+        "editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "Jota0222.multi-formatter"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}
