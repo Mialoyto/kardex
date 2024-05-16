@@ -11,7 +11,7 @@
 
 
 
-<h3 class="text-center mb-4">Reporte generado el <?= $fechaActual ?></h3>
+<h3 class="text-center mb-4">Reporte generado el </h3>
 
 <table class="table mt-3">
     <colgroup>

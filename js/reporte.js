@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener('click', () => {
         if (idProd.value != []) {
             const idproducto = idProd.value;
+            console.log(idproducto);
             window.open(`../../reports/contentproducto.php?idproducto=${idproducto}`, `_blank`);
         } else {
             alert("No se pued generar pdf")

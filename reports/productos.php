@@ -19,19 +19,8 @@ try {
 
     // datos backend
     $fechaActual = date("d-m-Y");
-    // $datosSH = $superhero->getAll(['publisher_name' => 'Microsoft']);
-    // forma 1: el publisher_id sera enviado desde la vista
-    // $tproducto = $_GET['idProdList'];
-    // forma 2: el publisher_id se obtiene de datosSH
-    // <?php echo $datosSH[0]['publisher_name'];
-    /*  $datosSH = $superhero->getFilter(
-       ['publisher_id' => $_GET['publisher_id']],
-       ['gender_id' => $_GET['publisher_id']],
-       ['limite' => $_GET['publisher_id']],
-     );   */
 
-
-    $data = $producto->listarProducto(['idproducto' => 2]);
+    $data = $producto->listarProducto(['idproducto' => $_GET['idproducto']]);
 
     require_once './contentproducto.php';
     $content = ob_get_clean();
