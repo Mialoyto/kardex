@@ -106,7 +106,7 @@
 
                             <div class="col-md px-5 pt-3">
                                 <div class="form-floating mb-3">
-                                    <select name="rol" id="rol" class="form-select">
+                                    <select name="rol" id="rol" class="form-select" required>
                                         <option>Seleccione un rol</option>
                                         <!-- asincronismo -->
                                     </select>

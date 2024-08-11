@@ -1,5 +1,5 @@
 <?=
-    session_start();
+session_start();
 
 if (!isset($_SESSION['login']) || (isset($_SESSION['login']) && !$_SESSION['login']['permitido'])) {
     header('Location:index.php');
@@ -50,8 +50,8 @@ $host = "http://localhost/kardex";
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fas fa-user fa-fw"></i>
-                    <?= $_SESSION['login']['nombres']?>
-                    <?= $_SESSION['login']['apepaterno']?>                    
+                    <?= $_SESSION['login']['nombres'] ?>
+                    <?= $_SESSION['login']['apepaterno'] ?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#!">Configuracion</a></li>
@@ -106,7 +106,8 @@ $host = "http://localhost/kardex";
 
                         <a class="nav-link" href="<?= $host; ?>/view/usuarios">
                             <div class="sb-nav-link-icon">
-                                <i class="fas fa-chart-area"></i>
+                                <!-- <i class="fas fa-chart-area"></i> -->
+                                <i><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></i>
                             </div>
                             Usuarios
                         </a>
