@@ -34,6 +34,7 @@ if (isset($_GET['operation'])) {
           $login['apematerno'] = $row[0]['apematerno'];
           $login['nombres'] = $row[0]['nombres'];
           $login['rol'] = $row[0]['rol'];
+          $login['status'] = 'Contraseña OK!';
 
         } else {
           $login['status'] = 'Contraseña incorrecta!';

@@ -96,9 +96,9 @@ if (isset($_SESSION['login']) && $_SESSION['login']['permitido'] == true) {
                 event.preventDefault();
 
                 const email = document.querySelector("#inputEmail").value;
-                console.log(email)
+                // console.log(email)
                 const pass = document.querySelector("#inputPassword").value;
-                console.log(pass)
+                // console.log(pass)
 
                 const params = new URLSearchParams();
                 params.append('operation', 'login');
@@ -113,9 +113,9 @@ if (isset($_SESSION['login']) && $_SESSION['login']['permitido'] == true) {
                             alert(acceso.status);
                         } else {
                             alert(acceso.status);
-                            alert(acceso.nombres);
+                            // alert(acceso.nombres);
                             window.location.href = './dashboard.php';
-                            alert(acceso.apepaterno);
+                            // alert(acceso.apepaterno);
 
                         }
 
