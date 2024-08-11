@@ -46,6 +46,9 @@ $host = "http://localhost/kardex";
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <div class="nav-link">
+                <p><b>|</b>Area developer <b>|</b></p>
+            </div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
