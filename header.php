@@ -1,5 +1,5 @@
 <?=
-session_start();
+    session_start();
 
 if (!isset($_SESSION['login']) || (isset($_SESSION['login']) && !$_SESSION['login']['permitido'])) {
     header('Location:index.php');
@@ -21,6 +21,11 @@ $host = "http://localhost/kardex";
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="<?= $host ?>/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- iconos de google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
 </head>
 
 <body class="sb-nav-fixed">
@@ -45,9 +50,15 @@ $host = "http://localhost/kardex";
             </div>
         </form>
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-        <div class="nav-link">
-                <p><b>|</b>Area developer <b>|</b></p>
+        <ul class="navbar-nav ms-auto ms-md-0 me-0  me-lg-5">
+            <div class="navbar-brand">
+
+                <p>
+                    <b>|</b>
+                    <i class="material-icons">developer_mode</i>
+                    Area developer
+                    <b>|</b>
+                </p>
             </div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
@@ -79,7 +90,7 @@ $host = "http://localhost/kardex";
                         <div class="sb-sidenav-menu-heading">INICIO</div>
                         <a class="nav-link" href="<?= $host; ?>/dashboard.php">
                             <div class="sb-nav-link-icon">
-                                <i class="fa-solid fa-house"></i>
+                                <i class="material-icons">home</i>
                             </div>
                             Dashboard
                         </a>
@@ -110,21 +121,23 @@ $host = "http://localhost/kardex";
                         <a class="nav-link" href="<?= $host; ?>/view/usuarios">
                             <div class="sb-nav-link-icon">
                                 <!-- <i class="fas fa-chart-area"></i> -->
-                                <i><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></i>
+                                <i class="material-icons">person_add</i>
+
+
                             </div>
                             Usuarios
                         </a>
 
                         <a class="nav-link" href="<?= $host; ?>/view/kardex">
                             <div class="sb-nav-link-icon">
-                                <i class="fas fa-chart-area"></i>
+                                <i class="material-icons">assignment_add</i>
                             </div>
                             Kardex
                         </a>
 
                         <a class="nav-link" href="<?= $host; ?>/view/reportes">
                             <div class="sb-nav-link-icon">
-                                <i class="fas fa-chart-area"></i>
+                                <i class="material-icons">picture_as_pdf</i>
                             </div>
                             Reportes
                         </a>
@@ -132,7 +145,9 @@ $host = "http://localhost/kardex";
 
 
                         <a class="nav-link" href="<?= $host; ?>/view/productos">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            <div class="sb-nav-link-icon">
+                                <i class="material-icons">inventory</i>
+                            </div>
                             productos
                         </a>
 
@@ -141,6 +156,7 @@ $host = "http://localhost/kardex";
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
                     Start Bootstrap
+
                 </div>
             </nav>
         </div>
