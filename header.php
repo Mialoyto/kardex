@@ -21,6 +21,9 @@ $host = "http://localhost/kardex";
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="<?= $host ?>/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- material icons- google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body class="sb-nav-fixed">
@@ -47,7 +50,13 @@ $host = "http://localhost/kardex";
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <div class="nav-link">
-                <p><b>|</b>Area principal <b>|</b></p>
+                <p>
+                    <b>|</b>
+                    <i class="material-icons">star</i>
+                    Area principal
+                    <b>|</b>
+
+                </p>
             </div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
