@@ -66,6 +66,7 @@ $host = "http://localhost/kardex";
                     <i class="fas fa-user fa-fw"></i>
                     <?= $_SESSION['login']['nombres'] ?>
                     <?= $_SESSION['login']['apepaterno'] ?>
+                    <?= $_SESSION['login']['apematerno'] ?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#!">Configuracion</a></li>
@@ -144,11 +145,17 @@ $host = "http://localhost/kardex";
 
 
 
+                        <a class="nav-link" href="<?= $host; ?>/view/marcas">
+                            <div class="sb-nav-link-icon">
+                                <i class="material-icons">storefront</i>
+                            </div>
+                            Marcas
+                        </a>
                         <a class="nav-link" href="<?= $host; ?>/view/productos">
                             <div class="sb-nav-link-icon">
                                 <i class="material-icons">inventory</i>
                             </div>
-                            productos
+                            Productos
                         </a>
 
                     </div>

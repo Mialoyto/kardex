@@ -2,7 +2,7 @@
 
 
 <!-- CONTENIDO CABEZERA DEL DASHBOARD -->
-<div class="container-fluid px-4">
+<div class="container-fluid px-4 " id="productos">
     <h2 class="mt-4">Panel regitro de producto</h2>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Registrar datos del producto</li>
@@ -81,7 +81,6 @@
 <!-- ARCHIVO PHP PIE DE PAGINA -->
 
 <?php require_once '../../footer.php' ?>
-<script src="<?= $host; ?>/js/registroProd.js"> </script>
 </body>
 
 </html>
