@@ -1,5 +1,5 @@
 <?=
-session_start();
+    session_start();
 
 if (!isset($_SESSION['login']) || (isset($_SESSION['login']) && !$_SESSION['login']['permitido'])) {
     header('Location:index.php');
@@ -21,6 +21,9 @@ $host = "http://localhost/kardex";
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="<?= $host ?>/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- material icons- google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body class="sb-nav-fixed">
@@ -46,6 +49,15 @@ $host = "http://localhost/kardex";
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+            <div class="nav-link">
+                <p>
+                    <b>|</b>
+                    <i class="material-icons">star</i>
+                    Area principal
+                    <b>|</b>
+
+                </p>
+            </div>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -107,7 +119,10 @@ $host = "http://localhost/kardex";
                         <a class="nav-link" href="<?= $host; ?>/view/usuarios">
                             <div class="sb-nav-link-icon">
                                 <!-- <i class="fas fa-chart-area"></i> -->
-                                <i><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /></i>
+                                <i>
+                                    <link rel="stylesheet"
+                                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+                                </i>
                             </div>
                             Usuarios
                         </a>
