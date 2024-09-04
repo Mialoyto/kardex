@@ -56,7 +56,7 @@ $host = "http://localhost/kardex";
             </div>
         </form>
         <!-- Navbar-->
-<<<<<<< HEAD
+
         <ul class="navbar-nav ms-auto ms-md-0 me-0  me-lg-5">
             <div class="navbar-brand">
 
@@ -65,16 +65,6 @@ $host = "http://localhost/kardex";
                     <i class="material-icons">developer_mode</i>
                     Area developer
                     <b>|</b>
-=======
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <div class="nav-link">
-                <p>
-                    <b>|</b>
-                    <i class="material-icons">star</i>
-                    Area principal
-                    <b>|</b>
-
->>>>>>> 358a4ee44198eacccf7abc8bd9756f316303c06e
                 </p>
             </div>
             <li class="nav-item dropdown">
@@ -139,16 +129,7 @@ $host = "http://localhost/kardex";
                         <a class="nav-link" href="<?= $host; ?>/view/usuarios">
                             <div class="sb-nav-link-icon">
                                 <!-- <i class="fas fa-chart-area"></i> -->
-<<<<<<< HEAD
                                 <i class="material-icons">person_add</i>
-
-
-=======
-                                <i>
-                                    <link rel="stylesheet"
-                                        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-                                </i>
->>>>>>> 358a4ee44198eacccf7abc8bd9756f316303c06e
                             </div>
                             Usuarios
                         </a>
