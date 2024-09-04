@@ -46,7 +46,7 @@ CALL spu_colaborador_registrar('1','1','miguel','administrador');
 
 -- contraseña encriptada = administrador
 UPDATE colaboradores 
-SET passusuario = "$2y$10$qE3VvkpqTFXvTBdhGJSFGO.9rXomoFtUA1uHoKOatzvRmOp6S3dqi" 
+SET passusuario = "$2y$10$tydi4xNItjL6yuK71g0kV.RmIRF/XAZzyhN/.9KToyhNCYt8gjOEa" 
 WHERE idcolaborador = 1;
 
 

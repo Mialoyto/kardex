@@ -27,6 +27,7 @@ END $$
 -- INSERCONES DE DATOS
 
 -- CONSULTAS Y PRUBAS
+SELECT * FROM colaboradores;
 SELECT * FROM personas;
 SELECT * FROM roles;
 SELECT * FROM tipoProductos;
