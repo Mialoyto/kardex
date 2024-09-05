@@ -6,7 +6,7 @@
     <div class="card mt-4">
         <div class="card-header">
             <div class="d-flex justify-content-between mt-2 mb-2">
-                <h2>MARCAS</h2>
+                <h2>Marcas</h2>
                 <button class="btn btn-success d-flex align-items-center" data-bs-toggle="modal"
                     data-bs-target="#mimodal">
                     <i class="material-icons me-2">add_business</i>
@@ -22,14 +22,11 @@
                             <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrar una nueva marca</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-
-
-
                         <div class="modal-body">
-                           
-                    
-                                    <input type="text" class="form-control">
-             
+
+
+                            <input type="text" class="form-control">
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-success d-flex align-items-center">
@@ -59,7 +56,7 @@
 
     <?php require_once '../../footer.php' ?>
     <!-- <script src="<?= $host;
-    echo $host ?>"> </script> -->
+                        echo $host ?>"> </script> -->
     </body>
 
     </html>

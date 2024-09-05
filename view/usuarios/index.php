@@ -2,7 +2,7 @@
 
 
 <!-- CONTENIDO CABEZERA DEL DASHBOARD -->
-<div class="container-fluid px-4">
+<div class="container-fluid px-4" id="content-user">
     <h2 class="mt-4">Panel de control usuarios</h2>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Registrar datos de coladaboradores</li>
