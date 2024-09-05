@@ -1,4 +1,4 @@
-function contentLoad(page){
+/* function contentLoad(page){
   fetch(`${page}.php`)
     .then(response => response.text)
     .then(data =>{
@@ -7,4 +7,4 @@ function contentLoad(page){
     })
 }
 
-document.querySelector("#usuario").addEventListener('click', () => contentLoad('index'));
+document.querySelector("#usuario").addEventListener('click', () => contentLoad('index')); */

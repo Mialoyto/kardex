@@ -110,7 +110,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                 </tbody>
             </table>
 
@@ -126,7 +126,7 @@
 <!-- ARCHIVO PHP PIE DE PAGINA -->
 
 <?php require_once '../../footer.php' ?>
-<script src="<?= $host ?>js/tableProductos.js"></script>
+<script src="<?= $host ?>/js/tableProductos.js"></script>
 </body>
 
 </html>
